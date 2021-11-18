@@ -14,6 +14,13 @@
 		<div id='my_tl' style ="width: 100%; height: 800px"></div>
 		<!-----add script to load timeline using data from google sheet----->
 		<script type="text/javascript">
-			timeline = new TL.Timeline('my_tl', 'https://docs.google.com/spreadsheets/d/1WBKG56ckxUzERZTqLm-PIXKCLTMY5_eqziy4W31PKD8/edit#gid=0');
+			//test adding timeline options from https://timeline.knightlab.com/docs/options.html
+			var options = {
+				hash_bookmark: false,
+				initial_zoom: 1,
+				optimal_tick_width: 200,
+				default_bg_color: {r:0, g:128, b:128}
+			}
+			var	timeline = new TL.Timeline('my_tl', 'https://docs.google.com/spreadsheets/d/1WBKG56ckxUzERZTqLm-PIXKCLTMY5_eqziy4W31PKD8/edit#gid=0', options);
 		</script>
 	</body>

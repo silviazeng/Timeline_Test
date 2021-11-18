@@ -5,9 +5,9 @@
 		<title>Silvia Z's Testing Timeline</title>
 		<!-----load in required css & script----->
 		<link title="timeline-styles" rel="stylesheet"
-		href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
-		<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js">
-		</script>
+		href="timeline.css"><!---https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css--->
+		<script src="timeline.js">
+		</script> <!--https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js--->
 	</head>
 	<body>
 		<!-----hold the timeline----->
@@ -22,5 +22,11 @@
 				default_bg_color: {r:0, g:128, b:128}
 			}
 			var	timeline = new TL.Timeline('my_tl', 'https://docs.google.com/spreadsheets/d/1WBKG56ckxUzERZTqLm-PIXKCLTMY5_eqziy4W31PKD8/edit#gid=0', options);
+
+			//set event handlers
+			event_name = "change";
+			timeline.on(event_name, function(data){
+				//alert("Changed!")
+			});
 		</script>
 	</body>
